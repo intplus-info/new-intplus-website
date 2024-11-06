@@ -59,7 +59,7 @@ const Header = () =>
               href="/contacts"
               className="blue-button h-[60px] xl:h-[60px] mt-[24px] inline-flex items-center justify-center text-base md:text-lg xl:text-2xl font-medium text-white bg-blue border border-transparent rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
             >
-              Let's get started
+              Let&apos;s get started
             </Link>
           </motion.div>
         </motion.div>

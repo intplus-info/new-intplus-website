@@ -24,7 +24,7 @@ export default function Header() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          We're more than just developers. We&apos;re a team of strategic
+          We&apos;re more than just developers. We&apos;re a team of strategic
           thinkers and problem solvers passionate about helping businesses
           succeed in the digital age.
         </motion.p>
@@ -35,7 +35,7 @@ export default function Header() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          Let's explore how we can help you achieve your goals
+          Let&apos;s explore how we can help you achieve your goals
         </motion.p>
 
         <motion.div
