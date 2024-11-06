@@ -1,16 +1,56 @@
-import Navbar from '../Navbar';
+"use client";
 
-const Header = () => {
-    return (
-        <div className='min-h-[500px] lg:min-h-[600px] w-screen bg-servicesBackground bg-cover p-7 lg:px-20 lg:py-10'>
-            <Navbar />
-            <div className='w-full h-auto flex flex-col gap-5 lg:gap-4 md:items-center text-center md:pt-20 text-white tracking-wide'>
-            <p className="font-light max-w-[600px] text-3xl md:text-5xl md:leading-[70px]">Who We <span className='font-bold'>Are</span> & <span className='font-bold'>How we can help</span></p>
-                <p className='font-normal text-[16px] lg:max-w-[700px]'>We&apos;re more than just developers. We&apos;re a team of strategic thinkers and problem solvers passionate about helping businesses succeed in the digital age. We offer a comprehensive suite of services, from design and development to consulting and support.</p>
-                <p className='font-normal text-[16px] lg:max-w-[600px] mt-2'>Let&apos;s explore how we can help you achieve your goals.</p>
-            </div>
-        </div>
-    );
-};
+import { motion } from "framer-motion";
+import Link from "next/link";
 
-export default Header;
+export default function Header() {
+  return (
+    <div className="min-h-screen w-full bg-servicesBackground bg-cover flex items-center justify-center px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto text-center space-y-8">
+        <motion.h1
+          className="text-4xl sm:text-5xl md:text-6xl text-white tracking-tight"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          Who We <span className="text-secondary font-extrabold">Are</span> &{" "}
+          <br />
+          <span className="text-secondary font-extrabold">How We Can Help</span>
+        </motion.h1>
+
+        <motion.p
+          className="mt-6 text-base sm:text-2xl text-white/80 max-w-3xl mx-auto"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          We're more than just developers. We&apos;re a team of strategic
+          thinkers and problem solvers passionate about helping businesses
+          succeed in the digital age.
+        </motion.p>
+
+        <motion.p
+          className="mt-4 text-lg sm:text-xl text-white/70 max-w-2xl mx-auto"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
+          Let's explore how we can help you achieve your goals
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+        >
+          <Link
+            href="/contacts"
+            className="blue-button h-[60px] xl:h-[60px] mt-[24px] inline-flex items-center justify-center text-base md:text-lg xl:text-xl font-medium text-white bg-blue border border-transparent rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
+          >
+            Contact Us
+          </Link>
+        </motion.div>
+      </div>
+    </div>
+  );
+}

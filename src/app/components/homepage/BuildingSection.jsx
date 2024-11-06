@@ -5,12 +5,13 @@ import Image from "next/image";
 
 const BuildingSection = () => {
   return (
-    <div className="relative w-full h-auto p-7 lg:px-20 lg:pb-10 flex flex-col items-center bg-white">
+    <div className="relative w-full h-auto py-20 container px-4 mx-auto flex flex-col items-center bg-white overflow-hidden">
       <div className="w-[60px] h-[60px] absolute left-[105px] top-[-30px] rounded-full bg-gradient-to-r from-[#2D7EFF] to-[#57007B] hidden lg:flex"></div>
       <div className="w-[60px] h-[60px] absolute left-[105px] bottom-[-30px] rounded-full bg-gradient-to-r from-[#2D7EFF] to-[#57007B] hidden lg:flex"></div>
       <div className="bg-[#2D7EFF] h-[4px] w-[70px] mb-[10px]"></div>
-      <p className="text-[#1A202C] text-3xl leading-[45px] max-w-[400px] text-center mb-[30px] lg:mb-[100px]">
-        Building For <span className="font-bold">Stability & Growth</span>
+      <p className="text-[#1A202C] text-3xl xl:text-5xl  leading-[45px] text-center mb-[30px] lg:mb-[100px]">
+        Building For <br />{" "}
+        <span className="font-bold">Stability & Growth</span>
       </p>
       <div className="w-full h-auto flex flex-col-reverse lg:flex-row justify-between mb-[70px] items-center relative">
         <div className="w-[50px] h-[50px] absolute left-[55%] top-[-20px] rounded-full bg-gradient-to-r from-[#FFEF5E] to-[#F7936F] hidden lg:flex"></div>

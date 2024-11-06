@@ -1,15 +1,36 @@
-import Navbar from '../Navbar';
+"use client";
 
-const Header = () => {
-    return (
-        <div className='min-h-[500px] lg:min-h-[600px] w-screen bg-servicesBackground bg-cover p-7 lg:px-20 lg:py-10'>
-            <Navbar />
-            <div className='w-full h-auto flex flex-col gap-5 lg:gap-4 md:items-center text-center md:pt-20 text-white tracking-wide'>
-                <p className="font-light max-w-[600px] text-3xl md:text-5xl md:leading-[70px]">Join Our<span className='font-bold'> Growing Innovative Great Minds</span></p>
-                <p className='font-normal text-[16px] max-w-[700px]'>Here at Int+, we&apos;re not just building software, we&apos;re building a future. We&apos;re looking for passionate and talented individuals to join our team and make a real impact.</p>
-            </div>
-        </div>
-    );
-};
+import { motion } from "framer-motion";
 
-export default Header;
+export default function Header() {
+  return (
+    <div className="min-h-screen w-full bg-servicesBackground bg-cover flex items-center justify-center px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto text-center space-y-8">
+        <motion.h1
+          className="text-4xl sm:text-5xl md:text-6xl text-white tracking-tight leading-relaxed"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          Join Our
+          <span className="font-bold">
+            {" "}
+            Growing <br className="hidden md:block" />
+            Innovative Great Minds
+          </span>
+        </motion.h1>
+
+        <motion.p
+          className="mt-6 text-base sm:text-2xl text-white/80 max-w-3xl mx-auto"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          Here at Int+, we&apos;re not just building software, we&apos;re
+          building a future. We&apos;re looking for passionate and talented
+          individuals to join our team and make a real impact.
+        </motion.p>
+      </div>
+    </div>
+  );
+}

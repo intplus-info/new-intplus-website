@@ -1,22 +1,21 @@
-
-import React from 'react';
-import Header from './components/homepage/Header.jsx';
-import ServiceSlider from './components/homepage/ServiceSlider.jsx';
-import BuildingSection from './components/homepage/BuildingSection.jsx';
-import WorkApproach from './components/homepage/WorkApproach.jsx';
-import DevelopmentProcess from './components/homepage/DevelopmentProcess.jsx';
-import CTA from './components/homepage/CTA.jsx';
-import Footer from './components/Footer.jsx';
+import React from "react";
+import Header from "./components/homepage/Header.jsx";
+import ServiceSlider from "./components/homepage/ServiceSlider.jsx";
+import BuildingSection from "./components/homepage/BuildingSection.jsx";
+import WorkApproach from "./components/homepage/WorkApproach.jsx";
+import DevelopmentProcess from "./components/homepage/DevelopmentProcess.jsx";
+import CTA from "./components/homepage/CTA.jsx";
+import Footer from "./components/Footer.jsx";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between overflow-x-hidden relative 2xl:container 2xl:mx-auto">
+    <main>
       <Header />
-      <ServiceSlider/>
-      <BuildingSection/>
-      <WorkApproach/>
-      <DevelopmentProcess/>
-      <CTA/>
+      <ServiceSlider />
+      <BuildingSection />
+      <WorkApproach />
+      <DevelopmentProcess />
+      <CTA />
       <Footer />
     </main>
   );

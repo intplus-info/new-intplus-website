@@ -61,62 +61,65 @@ const slidesData = [
 
 const ServiceSlider = () => {
   return (
-    <div className="w-full flex flex-col items-center bg-[#F9F9FF] z-10 h-auto py-7 lg:py-16 relative">
-      <p className="text-[#1A202C] text-3xl leading-[45px] max-w-[400px] text-center mb-[30px] lg:mb-[100px] font-bold px-7 lg:px-20 w-full">
+    <div className="w-full flex flex-col items-center justify-center bg-[#F9F9FF] min-h-screen relative">
+      <p className="text-[#1A202C] leading-[45px] text-4xl xl:text-5xl font-bold mb-16">
         Services we offer
       </p>
-      <Swiper
-        breakpoints={{
-          340: {
-            slidesPerView: 1,
-            spaceBetween: 15,
-          },
-          700: {
-            slidesPerView: 2,
-            spaceBetween: 15,
-          },
-          1200: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-        }}
-        freeMode={true}
-        pagination={{
-          clickable: true,
-          el: ".swiper-pagination.custom-pagination",
-        }}
-        modules={[FreeMode, Pagination]}
-        className="max-w-[90%] pb-10"
-      >
-        {slidesData.map((slide, index) => (
-          <SwiperSlide
-            key={index}
-            className="w-[333px] !h-[350px] bg-gradient-to-r from-[#2D7EFF] to-[#57007B] rounded-[5px] items-center p-[2px] overflow-hidden mb-5 lg:mb-0"
-          >
-            <div className="bg-white text-[#16205F] flex flex-col gap-[20px] h-full p-7 rounded-[2px]">
-              <div className="bg-gradient-to-r from-[#2D7EFF] to-[#57007B] rounded-full items-center p-[1px] overflow-hidden w-[70px] !h-[70px]">
-                <div className="bg-white h-full w-full rounded-full flex items-center justify-center">
-                  <Image
-                    src={slide.icon}
-                    alt="service-icon"
-                    width={40}
-                    height={40}
-                  />
+      <div className="container">
+        <Swiper
+          breakpoints={{
+            340: {
+              slidesPerView: 1,
+              spaceBetween: 15,
+            },
+            700: {
+              slidesPerView: 2,
+              spaceBetween: 15,
+            },
+            1200: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          }}
+          freeMode={true}
+          pagination={{
+            clickable: true,
+            el: ".swiper-pagination.custom-pagination",
+          }}
+          modules={[FreeMode, Pagination]}
+          className="max-w-[90%] pb-10"
+        >
+          {slidesData.map((slide, index) => (
+            <SwiperSlide
+              key={index}
+              className="w-[333px] !h-[350px] bg-gradient-to-r from-[#2D7EFF] to-[#57007B] rounded-[5px] items-center p-[2px] overflow-hidden mb-5 lg:mb-0"
+            >
+              <div className="bg-white text-[#16205F] flex flex-col gap-[20px] h-full p-7 rounded-[2px]">
+                <div className="bg-gradient-to-r from-[#2D7EFF] to-[#57007B] rounded-full items-center p-[1px] overflow-hidden w-[70px] !h-[70px]">
+                  <div className="bg-white h-full w-full rounded-full flex items-center justify-center">
+                    <Image
+                      src={slide.icon}
+                      alt="service-icon"
+                      width={40}
+                      height={40}
+                    />
+                  </div>
+                </div>
+                <div className="text-[#16205F] flex-1">
+                  <p className="font-semibold text-2xl mb-2 gradient-text">
+                    {slide.name}
+                  </p>
+                  <p className="text-[14px] text-[#4A5568]">
+                    {slide.description}
+                  </p>
                 </div>
               </div>
-              <div className="text-[#16205F] flex-1">
-                <p className="font-semibold text-2xl mb-2 gradient-text">
-                  {slide.name}
-                </p>
-                <p className="text-[14px] text-[#4A5568]">
-                  {slide.description}
-                </p>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      <div className="swiper-pagination custom-pagination relative mt-5"></div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+
+      <div className="swiper-pagination custom-pagination relative mt-5 mb-5"></div>
     </div>
   );
 };
