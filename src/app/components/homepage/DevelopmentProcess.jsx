@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const DevelopmentProcess = () => {
   return (
-    <div className="w-full h-auto p-7 lg:px-20 lg:pb-10 flex flex-col items-center mb-5">
+    <div className="w-full h-auto p-7 lg:px-20 lg:pb-10 flex flex-col items-center mb-5 container mx-auto">
       <div className="bg-[#2D7EFF] h-[4px] w-[70px] mb-[10px]"></div>
       <p className="text-[#1A202C] text-3xl leading-[45px] max-w-[400px] text-center mb-[30px] lg:mb-[100px]">
         How development <span className="font-bold">through Int+ works</span>

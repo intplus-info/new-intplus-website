@@ -63,7 +63,7 @@ const services = [
 const ServiceList = () => {
   return (
     <div className="bg-[#F9F9FF] pb-20 mb-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 container mx-auto py-10 w-full justify-between gap-y-[50px] gap-x-10  p-7 lg:px-20 h-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 container max-w-[1200px] mx-auto py-10 w-full justify-between gap-y-[50px] gap-x-10  p-7 lg:px-20 h-auto">
         {services.map((service, index) => (
           <div
             key={index}

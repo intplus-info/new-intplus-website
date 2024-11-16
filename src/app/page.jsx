@@ -5,7 +5,6 @@ import BuildingSection from "./components/homepage/BuildingSection.jsx";
 import WorkApproach from "./components/homepage/WorkApproach.jsx";
 import DevelopmentProcess from "./components/homepage/DevelopmentProcess.jsx";
 import CTA from "./components/homepage/CTA.jsx";
-import Footer from "./components/Footer.jsx";
 
 export default function Home() {
   return (
@@ -16,7 +15,6 @@ export default function Home() {
       <WorkApproach />
       <DevelopmentProcess />
       <CTA />
-      <Footer />
     </main>
   );
 }

@@ -8,18 +8,26 @@ export default function Header() {
     <div className="min-h-screen w-full bg-servicesBackground bg-cover flex items-center justify-center px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center space-y-8">
         <motion.h1
-          className="text-4xl sm:text-5xl md:text-6xl text-white tracking-tight"
+          className="text-4xl sm:text-5xl md:text-6xl text-white font-extralight"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          Who We <span className="text-secondary font-extrabold">Are</span> &{" "}
-          <br />
-          <span className="text-secondary font-extrabold">How We Can Help</span>
+          Who We{" "}
+          <span className="text-secondary font-extrabold bg-gradient-to-tr from-fuchsia-800 via-violet-700 to-purple-900 bg-clip-text text-transparent">
+            Are
+          </span>{" "}
+          & <br />
+          <span className="text-secondary font-extrabold">
+            How We Can{" "}
+            <span className="bg-gradient-to-tr from-fuchsia-800 via-violet-700 to-purple-900 bg-clip-text text-transparent">
+              Help
+            </span>
+          </span>
         </motion.h1>
 
         <motion.p
-          className="mt-6 text-base sm:text-2xl text-white/80 max-w-3xl mx-auto"
+          className="mt-6 text-base sm:text-base md:text-lg text-white/80 max-w-3xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -30,7 +38,7 @@ export default function Header() {
         </motion.p>
 
         <motion.p
-          className="mt-4 text-lg sm:text-xl text-white/70 max-w-2xl mx-auto"
+          className="mt-4 text-lg sm:text-base md:text-lg text-white/70 max-w-2xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
@@ -38,7 +46,7 @@ export default function Header() {
           Let&apos;s explore how we can help you achieve your goals
         </motion.p>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
@@ -49,7 +57,7 @@ export default function Header() {
           >
             Contact Us
           </Link>
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );

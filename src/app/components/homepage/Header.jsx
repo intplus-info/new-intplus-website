@@ -35,20 +35,30 @@ const Header = () =>
     return (
       <div className="min-h-screen w-full bg-homepageBackground bg-no-repeat bg-cover bg-center flex px-4 flex-col justify-center items-center">
         <motion.div
-          className="text-center flex flex-col gap-y-8 mt-28"
+          className="text-center container max-w-[1200px] flex flex-col gap-y-8 mt-28"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
           <motion.h1
-            className="text-white text-3xl md:text-5xl xl:text-8xl font-light tracking-wide md:leading-[70px]"
+            className="text-white text-3xl md:text-5xl lg:text-6xl font-extralight tracking-wide md:leading-[70px]"
             variants={itemVariants}
           >
-            Great <span className="font-bold">Products</span> are <br />
-            <span className="font-bold">built by great teams.</span>
+            Great{" "}
+            <span className="font-bold bg-gradient-to-tr from-fuchsia-800 via-violet-700 to-purple-900 bg-clip-text text-transparent">
+              Products
+            </span>{" "}
+            are <br />
+            <span className="font-bold">
+              built by great{" "}
+              <span className="bg-gradient-to-tr from-fuchsia-800 via-violet-700 to-purple-900 bg-clip-text text-transparent">
+                teams
+              </span>
+              .
+            </span>
           </motion.h1>
           <motion.p
-            className="text-white text-lg xl:text-2xl font-light tracking-wider"
+            className="text-white text-lg font-light tracking-wider"
             variants={itemVariants}
           >
             We help build and manage a team of world-class developers <br /> to
@@ -57,9 +67,9 @@ const Header = () =>
           <motion.div variants={itemVariants}>
             <Link
               href="/contacts"
-              className="blue-button h-[60px] xl:h-[60px] mt-[24px] inline-flex items-center justify-center text-base md:text-lg xl:text-2xl font-medium text-white bg-blue border border-transparent rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
+              className="blue-button h-[60px] xl:h-[60px] mt-[24px] inline-flex items-center justify-center text-base md:text-lg font-medium text-white bg-blue border border-transparent rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
             >
-              Let&apos;s get started
+              Let&apos;s get started!
             </Link>
           </motion.div>
         </motion.div>

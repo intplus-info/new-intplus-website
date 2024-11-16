@@ -54,7 +54,7 @@ const approachData = [
 const WorkApproach = () => {
   return (
     <div className="bg-[#F7F7FA] py-12">
-      <div className="container px-4 mx-auto flex flex-col items-center h-auto z-10">
+      <div className="container max-w-[1200px] px-4 mx-auto flex flex-col items-center h-auto z-10">
         <div className="bg-[#2D7EFF] h-[4px] w-[70px] mb-[10px]"></div>
         <p className="text-[#1A202C] text-3xl xl:text-5xl leading-[45px] text-center mb-[30px] lg:mb-[100px]">
           Our design and <br />

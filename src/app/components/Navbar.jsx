@@ -58,9 +58,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed border-none z-50 w-full py-4 md:py-8 transition-all duration-1000 ${bgColor}`}
+      className={`fixed border-none z-50 w-full py-4 md:py-6 transition-all duration-1000 ${bgColor}`}
     >
-      <div className="flex justify-between items-center container mx-auto px-6 md:px-8 xl:px-0">
+      <div className="flex justify-between items-center container max-w-[1400px] mx-auto px-6 md:px-8">
         {/* Logo Section */}
         <div className="flex gap-1 items-center">
           <div

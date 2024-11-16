@@ -10,17 +10,25 @@
     text-wrap: balance;
   }
 
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
+  /* General scrollbar styling (applies to both vertical and horizontal scrollbars) */
+  ::-webkit-scrollbar {
+    width: 5px; /* For vertical scrollbar */
+    height: 5px; /* For horizontal scrollbar */
   }
 
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
+  ::-webkit-scrollbar-track {
+    background: #e0ecfd;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #63676b;
+    border: 1px solid white;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9c9c9c;
   }
 
   /* Add this CSS to your stylesheet */
@@ -50,35 +58,33 @@
     background: linear-gradient(225deg, #ffc656 0%, #f16063 100%);
   }
 
-.swiper-pagination.custom-pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-pagination.custom-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background: #c4c4c4; 
-  opacity: 1;
-  margin: 0 4px;
-  border-radius: 50%;
-  transition: background-color 0.3s ease;
-}
-
-.swiper-pagination.custom-pagination .swiper-pagination-bullet-active {
-  background: linear-gradient(90deg, #2d7eff 0%, #57007b 100%);
-}
-
-.process-section {
-  overflow-x: auto;
-}
-
-@media (min-width: 1024px) {
-  .process-section {
-    overflow-x: visible;
+  .swiper-pagination.custom-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-}
 
+  .swiper-pagination.custom-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #c4c4c4;
+    opacity: 1;
+    margin: 0 4px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
 
+  .swiper-pagination.custom-pagination .swiper-pagination-bullet-active {
+    background: linear-gradient(90deg, #2d7eff 0%, #57007b 100%);
+  }
+
+  .process-section {
+    overflow-x: auto;
+  }
+
+  @media (min-width: 1024px) {
+    .process-section {
+      overflow-x: visible;
+    }
+  }
 }

@@ -71,7 +71,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full h-auto relative p-5 lg:px-20 lg:p-0 lg:py-10 flex items-center justify-end text-[#16205F] mt-5">
+    <div className="w-full h-auto relative p-5 lg:px-20 lg:p-0 lg:py-10 flex items-center justify-end text-[#16205F] mt-5 container mx-auto">
       <div className="bg-servicesBackground bg-no-repeat bg-cover rounded-[4px] lg:ml-20 rounded-br-[50px] h-full w-[40%] lg:w-[65%] absolute top-0 left-0 z-[-10]"></div>
       <form
         onSubmit={handleSubmit}

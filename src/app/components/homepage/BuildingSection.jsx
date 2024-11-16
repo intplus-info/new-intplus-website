@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const BuildingSection = () => {
   return (
-    <div className="relative w-full h-auto py-20 container px-4 mx-auto flex flex-col items-center bg-white overflow-hidden">
+    <div className="relative w-full h-auto py-20 container max-w-[1200px] px-4 mx-auto flex flex-col items-center bg-white overflow-hidden">
       <div className="w-[60px] h-[60px] absolute left-[105px] top-[-30px] rounded-full bg-gradient-to-r from-[#2D7EFF] to-[#57007B] hidden lg:flex"></div>
       <div className="w-[60px] h-[60px] absolute left-[105px] bottom-[-30px] rounded-full bg-gradient-to-r from-[#2D7EFF] to-[#57007B] hidden lg:flex"></div>
       <div className="bg-[#2D7EFF] h-[4px] w-[70px] mb-[10px]"></div>
