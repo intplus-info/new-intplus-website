@@ -12,7 +12,7 @@ const calistoga = Calistoga({
 const Footer = () => {
   return (
     <div className="h-auto w-full text-[#718096] mt-[100px] border-t-[2px] container mx-auto">
-      <div className="flex flex-col lg:flex-row gap-[70px] h-auto w-full  px-7 py-12 lg:p-20">
+      <div className="flex flex-col items-center justify-center lg:flex-row gap-[70px] h-auto w-full  px-7 py-12 lg:p-20">
         <div className="flex flex-col justify-between gap-[40px]">
           <div className="flex flex-col gap-[15px]">
             <div className="flex gap-1 items-center mb-[20px]">
